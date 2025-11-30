@@ -127,6 +127,25 @@
         .data-table td {
             color: #cbd5e1;
         }
+
+        .book-link-container {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-request {
+            background: rgba(100, 255, 218, 0.1);
+            border: 1px solid var(--accent-green);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .info-request h3 {
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 
@@ -135,72 +154,461 @@
         <a href="investigation materials.html" class="back-link">← ARCHIVE TOP</a>
 
         <h1 class="case-title">世田谷一家殺害事件</h1>
+        <p class="content-text">
+            2000年（平成12年）12月30日の深夜、東京都世田谷区上祖師谷の住宅で、幸せな一家4人の命が惨殺されました。犯人は現場に多くの遺留品を残し、長時間滞在していた痕跡がありながら、発生から20年以上が経過した現在も逮捕に至っていません。本レポートでは、事件の時系列、犯人の不可解な行動、そして最新の科学捜査が描く犯人像について詳述します。
+        </p>
 
         <div class="content-section">
             <h2 class="section-title">1. 事件概要</h2>
-            <p class="content-text">20世紀最後の日に発覚した、一家4人惨殺事件。犯人の異常な行動と大量の遺留品が特徴。</p>
             <table class="data-table">
                 <tr>
                     <th>発生日時</th>
-                    <td>2000年（平成12年）12月30日深夜〜31日未明</td>
+                    <td>2000年12月30日 午後11時頃 ～ 31日未明</td>
                 </tr>
                 <tr>
-                    <th>場所</th>
-                    <td>東京都世田谷区上祖師谷</td>
+                    <th>発生場所</th>
+                    <td>東京都世田谷区上祖師谷3丁目</td>
                 </tr>
                 <tr>
                     <th>被害者</th>
-                    <td>会社員男性（44）、妻（41）、長女（8）、長男（6）の4人</td>
+                    <td>宮澤みきおさん（当時44）、妻・泰子さん（同41）、長女・にいなちゃん（同8）、長男・礼君（同6）</td>
                 </tr>
                 <tr>
-                    <th>特徴</th>
-                    <td>犯人は犯行後、長時間現場に留まり、アイスクリームを食べたりパソコンを操作したりしていた。指紋や血液、衣類など大量の証拠を残しながらも逮捕に至っていない。</td>
-                </tr>
-                <tr>
-                    <th>捜査状況</th>
-                    <td>重要未解決事件として現在も捜査継続中。懸賞金対象事件。</td>
+                    <th>死因</th>
+                    <td>刺殺および絞殺（礼君のみ）</td>
                 </tr>
             </table>
 
-            <h2 class="section-title">2. 事件を追う：詳細な時系列</h2>
+            <h2 class="section-title">2. 犯行の時系列（タイムライン）</h2>
+            <p class="content-text">警察の鑑識結果や目撃証言から推測される犯行の流れは以下の通りです。</p>
             <ul class="timeline-list">
                 <li class="timeline-item">
-                    <span class="timeline-time">2000.12.30 深夜</span>
+                    <span class="timeline-time">2000.12.30 午後11時頃</span>
                     <span class="timeline-desc">
-                        犯人が浴室の窓から侵入し、一家4人を次々と殺害。
+                        犯人が公園のフェンスを乗り越え、2階浴室の窓から侵入したと見られます。
                     </span>
                 </li>
                 <li class="timeline-item">
-                    <span class="timeline-time">2000.12.31 未明〜朝</span>
+                    <span class="timeline-time">第一の凶行</span>
                     <span class="timeline-desc">
-                        犯人は現場に数時間（最大で翌朝まで）滞在。冷蔵庫のアイスを食べ、被害者のパソコンで劇団四季のチケット予約サイトなどを閲覧。
+                        2階子供部屋で寝ていた長男・礼君を絞殺。
                     </span>
                 </li>
                 <li class="timeline-item">
-                    <span class="timeline-time">2000.12.31 10:40頃</span>
+                    <span class="timeline-time">第二の凶行</span>
                     <span class="timeline-desc">
-                        隣に住む被害者の母が遺体を発見し通報。
+                        異変に気づき2階へ上がってきた父・みきおさんを階段付近で襲撃。柳刃包丁で執拗に攻撃し殺害。
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">その後</span>
+                    <span class="timeline-desc">
+                        犯人は折れた柳刃包丁を残し、家の中にあった文化包丁を手に、3階のロフトで寝ていた妻・泰子さんと長女・にいなちゃんを襲撃。2人は逃げようとしたものの、最終的に殺害されました。
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">犯行後の滞在（空白の数時間）</span>
+                    <span class="timeline-desc">
+                        犯人は殺害後、最大で翌朝まで現場に留まった可能性が高いとされています。<br>
+                        <strong>飲食:</strong> 冷蔵庫からアイスクリーム（カップ4個）、麦茶、メロンを取り出し飲食。<br>
+                        <strong>治療:</strong> 犯人自身の怪我（右手）の手当てに、家にある生理用品やタオルを使用。<br>
+                        <strong>PC操作:</strong> みきおさんのパソコンを操作し、劇団四季のチケット予約サイトや、自らの侵入経路に関わるような検索を行っていた形跡あり。<br>
+                        <strong>トイレ:</strong> 2階のトイレを使用（大便の中にインゲン豆の胡麻和えが残存）。
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">2000.12.31 午前10時40分頃</span>
+                    <span class="timeline-desc">
+                        隣に住む泰子さんの実母が、インターホンに応答がないため合鍵で入室し、遺体を発見。
                     </span>
                 </li>
             </ul>
 
-            <h2 class="section-title">3. 捜査の謎と考察</h2>
+            <h2 class="section-title">3. 犯人の不可解な行動と特徴</h2>
+            <p class="content-text">この事件を特異なものにしているのは、犯人が見せた「異常な大胆さ」と「物証の多さ」です。</p>
+
             <div class="analysis-box">
-                <h4>1. 大量の遺留品</h4>
-                <p style="font-size: 0.95rem; color: #cbd5e1;">
-                    トレーナー、帽子、マフラー、ヒップバッグ、手袋、包丁など、犯人のものと思われる多数の遺留品が残されていました。これらは量販店で販売されていたもので、購入ルートの特定が試みられましたが、決定的な絞り込みには至っていません。
+                <h4>現場に残された多量の遺留品</h4>
+                <p class="content-text">
+                    犯人はまるで自分の痕跡を誇示するかのように、多くの物を置いて逃走しました。<br>
+                    <strong>衣類:</strong> ラグランシャツ、ダウンジャケット（ユニクロ）、帽子、マフラー、手袋。<br>
+                    <strong>凶器:</strong> 柳刃包丁（犯人持参）、文化包丁（被害者宅のもの）。<br>
+                    <strong>その他:</strong> ヒップバッグ、香水、ハンカチ。
+                </p>
+            </div>
+
+            <div class="analysis-box">
+                <h4>異常な行動パターン</h4>
+                <p class="content-text">
+                    <strong>アイスクリームの食べ方:</strong> カップを握りつぶすようにして食べていた（「カップ食い」と呼ばれる独特な方法）。<br>
+                    <strong>被害者との同居:</strong> 遺体のすぐそばで飲食やパソコン操作を行っており、極めて冷酷かつ異常な精神状態がうかがえます。
+                </p>
+            </div>
+
+            <h2 class="section-title">4. 科学捜査が描く「犯人像」</h2>
+            <p class="content-text">DNA鑑定や遺留品の解析から、以下のような具体的な犯人像が浮かび上がっています。</p>
+            <table class="data-table">
+                <tr>
+                    <th>性別・年齢</th>
+                    <td>男性、当時15歳〜20代（若者の可能性が高い）。</td>
+                </tr>
+                <tr>
+                    <th>身体特徴</th>
+                    <td>身長170cm前後（175cm前後の説もあり）、痩せ型。右手に怪我を負っていた。</td>
+                </tr>
+                <tr>
+                    <th>血液型・DNA</th>
+                    <td>A型。父系がアジア系、母系に南欧系（アドリア海沿岸等）の祖先を持つ可能性がある（日本人離れしたDNA特徴）。</td>
+                </tr>
+                <tr>
+                    <th>足のサイズ</th>
+                    <td>27.5cm〜28cm（現場に残された靴跡「スラセンジャー」は韓国サイズ表記）。</td>
+                </tr>
+                <tr>
+                    <th>身体能力</th>
+                    <td>2階の浴室窓（高い位置にある）から侵入しており、また逃走時も身軽に動いていることから、スポーツ経験者や身体能力の高い人物。</td>
+                </tr>
+                <tr>
+                    <th>所持品の特徴</th>
+                    <td>遺留品の砂から、アメリカ・カリフォルニア州のモハーヴェ砂漠（エドワーズ空軍基地周辺）に含まれる砂が検出。スケートボードなどのストリートカルチャーとの関連も指摘されている。</td>
+                </tr>
+            </table>
+
+            <h2 class="section-title">5. 捜査の現状と課題</h2>
+            <div class="analysis-box">
+                <h4>捜査の壁</h4>
+                <p class="content-text">
+                    警視庁は延べ数十万人の捜査員を投入しましたが、決定的な目撃情報の欠如と、犯人の足取りが「プッツリと途切れている」ことから、特定には至っていません。指紋やDNAという「鍵」はあるものの、それに合致する「ドア（被疑者）」が見つかっていない状態です。
                 </p>
             </div>
             <div class="analysis-box">
-                <h4>2. 犯人の異常行動</h4>
-                <p style="font-size: 0.95rem; color: #cbd5e1;">
-                    殺害後に現場で飲食をし、パソコンを操作し、トイレを使用するなど、極めて大胆かつ不可解な行動をとっています。また、止血処置をした形跡もあり、犯人も負傷していたことが判明しています。
+                <h4>法改正の影響</h4>
+                <p class="content-text">
+                    2010年の刑事訴訟法改正により、殺人事件の時効が撤廃されました。これにより、本事件は永久に捜査が続けられることになります。
                 </p>
             </div>
             <div class="analysis-box">
-                <h4>3. 外国人説と怨恨説</h4>
-                <p style="font-size: 0.95rem; color: #cbd5e1;">
-                    現場に残された靴のサイズ（27.5cm〜28cm）や、日本国外でしか販売されていないモデルの靴であったこと、DNA鑑定の結果などから、外国人による犯行説も有力視されています。一方で、被害者宅の内情に詳しいことなどから、怨恨による犯行説も消えていません。
+                <h4>最新の動き</h4>
+                <p class="content-text">
+                    近年では、最新のDNA解析技術を用いて、犯人の顔立ちや目の色などを推定する捜査手法も導入されています。また、海外の捜査機関への照会など、国際的な捜査も視野に入れられています。
+                </p>
+            </div>
+
+            <h2 class="section-title">ジャーナリストレポート：多すぎる遺留品が語るもの</h2>
+            <p class="content-text">
+                通常、犯人は証拠を隠滅しようとするものですが、この事件の犯人はまるで自分を誇示するかのように、あるいは極度の疲労や異常な心理状態ゆえか、決定的な手がかりを現場に残しました。
+            </p>
+
+            <h3 style="color: var(--accent-green); margin-top: 2rem; margin-bottom: 1rem;">1. 遺留品の詳細分析：犯人を紐解く「物証」</h3>
+            <p class="content-text">現場に残された遺留品は、量産品が多いものの、その組み合わせや使用状態に極めて強い個性が表れています。</p>
+
+            <div class="analysis-box">
+                <h4>衣類・装備品</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: var(--accent-blue);">ラグランシャツ【最も重要な物証の一つ】</strong><br>
+                        <span
+                            style="color: #cbd5e1;">Lサイズ。胴部分がグレー、袖が紫。1990年〜2000年頃に販売されていたもの。蛍光剤が入っていない洗剤で洗濯されていたことから、水質へのこだわりや海外生活者の可能性が指摘されました。ボロボロになるまで着古されており、犯人の経済状況や物持ちの良さを示唆します。</span>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: var(--accent-blue);">スニーカー【スラセンジャー (Slazenger)】</strong><br>
+                        <span
+                            style="color: #cbd5e1;">英国ブランドだが、韓国でライセンス生産されたモデル（27.5cm〜28.0cm）。日本国内での流通は極めて限定的だったため、犯人が韓国で購入したか、ドン・キホーテなどの量販店で偶然購入したかの二説に分かれます。靴底の跡から、犯人の足の運び方（歩き方の癖）も分析されています。</span>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: var(--accent-blue);">ヒップバッグ【中身の微物が語る行動範囲】</strong><br>
+                        <span style="color: #cbd5e1;">使い古された緑色のバッグ。バッグの底から検出された「砂」などの微物が、捜査の方向性を大きく変えました。</span>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: var(--accent-blue);">マフラー</strong><br>
+                        <span
+                            style="color: #cbd5e1;">アクリル製、緑色、チェック柄。100円ショップや量販店で売られている安価なもの。長さが130cmほどで、犯人がこれを着用していたことから、首回りのサイズ感も推定されています。</span>
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: var(--accent-blue);">香水【ドラッカー・ノワール (Drakkar Noir)】</strong><br>
+                        <span
+                            style="color: #cbd5e1;">ハンカチやバッグから微量に検出。80年代に流行したフランス製の男性用香水。スケートボーダーやサーファーに愛好者が多かったと言われています。</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="analysis-box">
+                <h4>凶器</h4>
+                <p class="content-text">
+                    <strong>柳刃包丁（犯人持参）:</strong> 「関孫六 銀寿」。購入ルートが特定しきれていませんが、犯行の計画性を示すものです。刃こぼれするほどの強い力で使用されました。<br>
+                    <strong>文化包丁（現場のもの）:</strong> 柳刃包丁が破損した後、家の台所にあった包丁を持ち出して犯行を継続しました。
+                </p>
+            </div>
+
+            <div class="analysis-box">
+                <h4>特異な検出物：砂と化学物質</h4>
+                <p class="content-text">
+                    ヒップバッグの内側からは、以下の微物が検出されています。<br>
+                    <strong>モハーヴェ砂漠の砂:</strong> 米国カリフォルニア州のエドワーズ空軍基地周辺の砂と酷似。<br>
+                    <strong>三浦半島の砂:</strong> スケートボードができる公園の砂と一致する可能性。<br>
+                    <strong>蛍光染料:</strong> 舞台照明やペンライトなどに使われる化学物質。
+                </p>
+            </div>
+
+            <h3 style="color: var(--accent-green); margin-top: 2rem; margin-bottom: 1rem;">2. 主要な容疑者説</h3>
+            <p class="content-text">遺留品や目撃情報、プロファイリングから、いくつかの有力な説がメディアや捜査関係者の間で議論されてきました。</p>
+
+            <div class="analysis-box">
+                <h4>① スケーター（若者）説</h4>
+                <p class="content-text">
+                    最も有力視された説の一つです。<br>
+                    <strong>根拠:</strong>
+                    被害者宅周辺の公園（祖師谷公園）はスケートボードのスポットであり、騒音トラブルがあったという情報。遺留品（ラグランシャツ、ヒップバッグ、香水）が当時のスケーターファッションと一致。現場に残された砂が、スケートボードの滑り止め（グリップテープ）に付着していた可能性。<br>
+                    <strong>犯人像:</strong> 世田谷周辺、あるいは小田急線沿線に土地勘のある若者。
+                </p>
+            </div>
+
+            <div class="analysis-box">
+                <h4>② 外国人・渡航歴のある人物説</h4>
+                <p class="content-text">
+                    DNA鑑定と遺留品の海外性に着目した説です。<br>
+                    <strong>根拠:</strong> 靴: 韓国サイズの「スラセンジャー」。DNA:
+                    父系がアジア系、母系に南欧系の特徴を持つ、混血の可能性があるという鑑定結果（※ただし、これは「日本人に少ない」というだけで外国人と断定するものではありません）。砂:
+                    カリフォルニア州の砂が検出されたことから、米国への渡航歴、あるいは米軍関係者との接点。<br>
+                    <strong>犯人像:</strong> 韓国、あるいは米国西海岸と接点を持つ人物。犯行後すぐに海外へ逃亡した可能性も囁かれました。
+                </p>
+            </div>
+
+            <div class="analysis-box">
+                <h4>③ 劇団・芸術関係者説</h4>
+                <p class="content-text">
+                    ヒップバッグ内の微物とPC操作履歴に基づく説です。<br>
+                    <strong>根拠:</strong>
+                    バッグから検出された「蛍光染料」が、演劇の舞台装置や衣装に使われるものと類似。犯人が現場のPCで「劇団四季」のチケット予約（被害者の行動を確認した可能性もあり）サイトにアクセスしていた。<br>
+                    <strong>犯人像:</strong> 舞台関係の仕事に従事していた、あるいは演劇に関心の高い人物。
+                </p>
+            </div>
+
+            <div class="analysis-box">
+                <h4>④ カリフォルニア・軍関係者説</h4>
+                <p class="content-text">
+                    「砂」の分析から派生した特異な説です。<br>
+                    <strong>根拠:</strong> 検出された砂が「エドワーズ空軍基地」周辺のものと酷似している点。基地関係者、あるいはその周辺に住んでいた人物が日本に来て犯行に及んだという見方。
+                </p>
+            </div>
+
+            <h2 class="section-title">ジャーナリストレポート：地理的必然性と目撃証言</h2>
+            <p class="content-text">
+                本事件が「なぜそこで起き、なぜ誰も気づけなかったのか」という地理的な必然性と、捜査の糸口となりながらも決め手を欠く目撃証言の深層について解説します。
+            </p>
+
+            <h3 style="color: var(--accent-green); margin-top: 2rem; margin-bottom: 1rem;">1. 現場の地理的環境：「陸の孤島」と化した死角</h3>
+            <p class="content-text">
+                事件現場となった世田谷区上祖師谷3丁目の宮澤さん宅は、当時、非常に特殊な環境下にありました。一言で言えば、都市計画の狭間で生まれた<strong>「防犯上の空白地帯」</strong>でした。
+            </p>
+
+            <div class="analysis-box">
+                <h4>① 公園拡張工事による「孤立」</h4>
+                <p class="content-text">
+                    当時、現場周辺は「都立祖師谷公園」の拡張予定地となっていました。<br>
+                    <strong>立ち退きの進行:</strong> 周辺の住宅の多くはすでに立ち退きを完了しており、残っていたのは宮澤さん宅を含むわずか4軒のみでした。<br>
+                    <strong>人通りの少なさ:</strong> 夜間になると周囲は人気（ひとけ）が絶え、街灯も少なく、暗闇に包まれる環境でした。誰かが歩いていても目撃されにくい状況が出来上がっていました。
+                </p>
+            </div>
+
+            <div class="analysis-box">
+                <h4>② 侵入を容易にした地形</h4>
+                <p class="content-text">
+                    宮澤さん宅の裏手は、公園の敷地と接していました。<br>
+                    <strong>フェンスと土手:</strong> 家の裏には公園のフェンスがあり、さらにそこは盛り土（土手）になっていました。<br>
+                    <strong>2階へのアクセス:</strong>
+                    この土手を登ると、宮澤さん宅の2階にある浴室の窓（侵入口）と、犯人の目線の高さがほぼ同じになります。通常なら高くて届かない2階の窓が、この地形のせいで<strong>「容易にまたいで入れる入り口」</strong>となっていました。犯人はこの構造を熟知していた可能性が高いです。
+                </p>
+            </div>
+
+            <div class="analysis-box">
+                <h4>③ 騒音をかき消す環境</h4>
+                <p class="content-text">
+                    <strong>スケートボードの音:</strong> 家のすぐ裏の広場では、夜遅くまでスケートボードをする若者がおり、滑走音が日常的に響いていました。<br>
+                    <strong>航空機と川の音:</strong> 上空は航空機の飛行ルートに近く、近くには仙川が流れていました。<br>
+                    <strong>悲鳴の遮断:</strong>
+                    これらの環境音に加え、家の構造（断熱・防音性が高い）もあり、被害者の悲鳴や物音は隣家にさえ届きにくい状況でした。実際に、すぐ隣に住んでいた泰子さんの実母も、犯行時刻頃に「ドスン」という大きな音は聞いたものの、悲鳴は聞いていません。
+                </p>
+            </div>
+
+            <h3 style="color: var(--accent-green); margin-top: 2rem; margin-bottom: 1rem;">2. 当時の目撃証言：犯人の影を追う</h3>
+            <p class="content-text">
+                事件前後には、犯人と思しき人物や、不審な動きをする人物の目撃情報が多数寄せられています。これらは犯人像を絞り込む上で重要視されています。
+            </p>
+
+            <div class="analysis-box">
+                <h4>① 事件前の「予兆」に関する証言</h4>
+                <p class="content-text">
+                    <strong>スケーターとのトラブル:</strong>
+                    宮澤さんは生前、自宅裏の公園で騒ぐスケートボーダーたちに対し、注意をしたり議論になったりしていたという目撃情報があります。これが「怨恨説」の一つの根拠となっています。<br>
+                    <strong>「見張り役」のような男:</strong> 事件の数日前、現場近くで宮澤さん宅の方をじっと見ている不審な男が目撃されています。特徴: スポーツタイプの服装、ヒップバッグを所持。<br>
+                    <strong>最寄り駅での目撃:</strong> 事件当日（12月30日）の夕方、最寄りの小田急線成城学園前駅などで、犯人の服装（ユニクロのダウン、帽子）と酷似した男が目撃されています。
+                </p>
+            </div>
+
+            <div class="analysis-box">
+                <h4>② 事件直後の「逃走」に関する証言</h4>
+                <p class="content-text">
+                    <strong>飛び出してきた男（12月31日午後）:</strong>
+                    遺体発見の数時間後、現場付近の駅から電車に乗ろうとしていた男の目撃情報があります。しかし、これは時間が経過しすぎているため、信憑性については慎重な見方がされています。<br>
+                    <strong>タクシー運転手の証言（重要）:</strong>
+                    事件発覚直後の12月31日未明から早朝にかけて、現場付近あるいは少し離れた場所から乗車した客の中に、不審な人物がいたという証言です。内容:
+                    「若い男を乗せたが、手が血まみれだった」「怪我をしているようだった」という報告が複数ありましたが、決定的な特定には至っていません。<br>
+                    <strong>東武日光駅での目撃:</strong>
+                    犯行翌日の昼過ぎ、栃木県の東武日光駅で、右手に傷を負った男が駅の事務室で治療を受けていたという情報があります。犯人の遺留品（ヒップバッグの砂など）から広域な移動が疑われたため注目されましたが、こちらも決定打にはなっていません。
+                </p>
+            </div>
+
+            <h2 class="section-title">関連書籍</h2>
+            <div class="book-link-container">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <div
+                                style="border:1px solid rgba(255,255,255,0.1);border-radius:.75rem;background-color:rgba(255,255,255,0.05);width:100%;max-width:504px;margin:0px;padding:5px;text-align:center;overflow:hidden;">
+                                <table>
+                                    <tr>
+                                        <td style="width:240px"><a
+                                                href="https://hb.afl.rakuten.co.jp/ichiba/4eb2a2d4.8ef76f8a.4eb2a2d5.da188c62/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frenet3%2F0012306054%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
+                                                target="_blank" rel="nofollow sponsored noopener"
+                                                style="word-wrap:break-word;"><img
+                                                    src="https://hbb.afl.rakuten.co.jp/hgb/4eb2a2d4.8ef76f8a.4eb2a2d5.da188c62/?me_id=1312593&item_id=10771001&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Frenet3%2Fcabinet%2Fitem_photo%2F001230%2F6%2F0012306054.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
+                                                    border="0" style="margin:2px"
+                                                    alt="[商品価格に関しましては、リンクが作成された時点と現時点で情報が変更されている場合がございます。]"
+                                                    title="[商品価格に関しましては、リンクが作成された時点と現時点で情報が変更されている場合がございます。]"></a></td>
+                                        <td style="vertical-align:top;width:248px;display: block;">
+                                            <p
+                                                style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word">
+                                                <a href="https://hb.afl.rakuten.co.jp/ichiba/4eb2a2d4.8ef76f8a.4eb2a2d5.da188c62/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frenet3%2F0012306054%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
+                                                    target="_blank" rel="nofollow sponsored noopener"
+                                                    style="word-wrap:break-word; color: #cbd5e1;">【中古】世田谷一家殺人事件 /
+                                                    一橋文哉</a><br><span style="color: #cbd5e1;">価格：165円（税込、送料別)</span>
+                                                <span style="color:#BBB">(2025/11/30時点)</span></p>
+                                            <div style="margin:10px;"><a
+                                                    href="https://hb.afl.rakuten.co.jp/ichiba/4eb2a2d4.8ef76f8a.4eb2a2d5.da188c62/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frenet3%2F0012306054%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
+                                                    target="_blank" rel="nofollow sponsored noopener"
+                                                    style="word-wrap:break-word;"><img
+                                                        src="https://static.affiliate.rakuten.co.jp/makelink/rl.svg"
+                                                        style="float:left;max-height:27px;width:auto;margin-top:0"></a><a
+                                                    href="https://hb.afl.rakuten.co.jp/ichiba/4eb2a2d4.8ef76f8a.4eb2a2d5.da188c62/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frenet3%2F0012306054%2F%3Fscid%3Daf_pc_bbtn&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ=="
+                                                    target="_blank" rel="nofollow sponsored noopener"
+                                                    style="word-wrap:break-word;">
+                                                    <div
+                                                        style="float:right;width:41%;height:27px;background-color:#bf0000;color:#fff!important;font-size:12px;font-weight:500;line-height:27px;margin-left:1px;padding: 0 12px;border-radius:16px;cursor:pointer;text-align:center;">
+                                                        楽天で購入 </div>
+                                                </a></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div><br>
+                            <p style="color:#000000;font-size:12px;line-height:1.4em;margin:5px;word-wrap:break-word">
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="book-link-container">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <div
+                                style="border:1px solid rgba(255,255,255,0.1);border-radius:.75rem;background-color:rgba(255,255,255,0.05);width:100%;max-width:504px;margin:0px;padding:5px;text-align:center;overflow:hidden;">
+                                <table>
+                                    <tr>
+                                        <td style="width:240px"><a
+                                                href="https://hb.afl.rakuten.co.jp/ichiba/4eb2a6e8.f8786d4a.4eb2a6e9.5febb705/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcomicset%2F4794215029%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
+                                                target="_blank" rel="nofollow sponsored noopener"
+                                                style="word-wrap:break-word;"><img
+                                                    src="https://hbb.afl.rakuten.co.jp/hgb/4eb2a6e8.f8786d4a.4eb2a6e9.5febb705/?me_id=1249489&item_id=10455577&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fcomicset%2Fcabinet%2F05243425%2Fbku9ynjzpx3cg9kp.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
+                                                    border="0" style="margin:2px"
+                                                    alt="[商品価格に関しましては、リンクが作成された時点と現時点で情報が変更されている場合がございます。]"
+                                                    title="[商品価格に関しましては、リンクが作成された時点と現時点で情報が変更されている場合がございます。]"></a></td>
+                                        <td style="vertical-align:top;width:248px;display: block;">
+                                            <p
+                                                style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word">
+                                                <a href="https://hb.afl.rakuten.co.jp/ichiba/4eb2a6e8.f8786d4a.4eb2a6e9.5febb705/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcomicset%2F4794215029%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
+                                                    target="_blank" rel="nofollow sponsored noopener"
+                                                    style="word-wrap:break-word; color: #cbd5e1;">【中古】 世田谷一家殺人事件
+                                                    侵入者たちの告白 / 齊藤 寅 / 草思社 [単行本]【メール便送料無料】【最短翌日配達対応】</a><br><span
+                                                    style="color: #cbd5e1;">価格：228円（税込、送料別)</span> <span
+                                                    style="color:#BBB">(2025/11/30時点)</span></p>
+                                            <div style="margin:10px;"><a
+                                                    href="https://hb.afl.rakuten.co.jp/ichiba/4eb2a6e8.f8786d4a.4eb2a6e9.5febb705/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcomicset%2F4794215029%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
+                                                    target="_blank" rel="nofollow sponsored noopener"
+                                                    style="word-wrap:break-word;"><img
+                                                        src="https://static.affiliate.rakuten.co.jp/makelink/rl.svg"
+                                                        style="float:left;max-height:27px;width:auto;margin-top:0"></a><a
+                                                    href="https://hb.afl.rakuten.co.jp/ichiba/4eb2a6e8.f8786d4a.4eb2a6e9.5febb705/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcomicset%2F4794215029%2F%3Fscid%3Daf_pc_bbtn&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ=="
+                                                    target="_blank" rel="nofollow sponsored noopener"
+                                                    style="word-wrap:break-word;">
+                                                    <div
+                                                        style="float:right;width:41%;height:27px;background-color:#bf0000;color:#fff!important;font-size:12px;font-weight:500;line-height:27px;margin-left:1px;padding: 0 12px;border-radius:16px;cursor:pointer;text-align:center;">
+                                                        楽天で購入 </div>
+                                                </a></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div><br>
+                            <p style="color:#000000;font-size:12px;line-height:1.4em;margin:5px;word-wrap:break-word">
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="book-link-container">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <div
+                                style="border:1px solid rgba(255,255,255,0.1);border-radius:.75rem;background-color:rgba(255,255,255,0.05);width:100%;max-width:504px;margin:0px;padding:5px;text-align:center;overflow:hidden;">
+                                <table>
+                                    <tr>
+                                        <td style="width:240px"><a
+                                                href="https://hb.afl.rakuten.co.jp/ichiba/13a3830f.bbd7b62b.13a38310.32f7eadf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12181073%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
+                                                target="_blank" rel="nofollow sponsored noopener"
+                                                style="word-wrap:break-word;"><img
+                                                    src="https://hbb.afl.rakuten.co.jp/hgb/13a3830f.bbd7b62b.13a38310.32f7eadf/?me_id=1213310&item_id=16280243&pc=https%3A%2F%2Fthumbnail.image.rakuten.co.jp%2F%400_mall%2Fbook%2Fcabinet%2F7325%2F9784005007325.jpg%3F_ex%3D240x240&s=240x240&t=picttext"
+                                                    border="0" style="margin:2px"
+                                                    alt="[商品価格に関しましては、リンクが作成された時点と現時点で情報が変更されている場合がございます。]"
+                                                    title="[商品価格に関しましては、リンクが作成された時点と現時点で情報が変更されている場合がございます。]"></a></td>
+                                        <td style="vertical-align:top;width:248px;display: block;">
+                                            <p
+                                                style="font-size:12px;line-height:1.4em;text-align:left;margin:0px;padding:2px 6px;word-wrap:break-word">
+                                                <a href="https://hb.afl.rakuten.co.jp/ichiba/13a3830f.bbd7b62b.13a38310.32f7eadf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12181073%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
+                                                    target="_blank" rel="nofollow sponsored noopener"
+                                                    style="word-wrap:break-word; color: #cbd5e1;">悲しみを生きる力に 被害者遺族からあなたへ
+                                                    （岩波ジュニア新書　732） [ 入江 杏 ]</a><br><span
+                                                    style="color: #cbd5e1;">価格：968円（税込、送料無料)</span> <span
+                                                    style="color:#BBB">(2025/11/30時点)</span></p>
+                                            <div style="margin:10px;"><a
+                                                    href="https://hb.afl.rakuten.co.jp/ichiba/13a3830f.bbd7b62b.13a38310.32f7eadf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12181073%2F&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ%3D%3D"
+                                                    target="_blank" rel="nofollow sponsored noopener"
+                                                    style="word-wrap:break-word;"><img
+                                                        src="https://static.affiliate.rakuten.co.jp/makelink/rl.svg"
+                                                        style="float:left;max-height:27px;width:auto;margin-top:0"></a><a
+                                                    href="https://hb.afl.rakuten.co.jp/ichiba/13a3830f.bbd7b62b.13a38310.32f7eadf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbook%2F12181073%2F%3Fscid%3Daf_pc_bbtn&link_type=picttext&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJwaWN0dGV4dCIsInNpemUiOiIyNDB4MjQwIiwibmFtIjoxLCJuYW1wIjoicmlnaHQiLCJjb20iOjEsImNvbXAiOiJkb3duIiwicHJpY2UiOjEsImJvciI6MSwiY29sIjoxLCJiYnRuIjoxLCJwcm9kIjowLCJhbXAiOmZhbHNlfQ=="
+                                                    target="_blank" rel="nofollow sponsored noopener"
+                                                    style="word-wrap:break-word;">
+                                                    <div
+                                                        style="float:right;width:41%;height:27px;background-color:#bf0000;color:#fff!important;font-size:12px;font-weight:500;line-height:27px;margin-left:1px;padding: 0 12px;border-radius:16px;cursor:pointer;text-align:center;">
+                                                        楽天で購入 </div>
+                                                </a></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div><br>
+                            <p style="color:#000000;font-size:12px;line-height:1.4em;margin:5px;word-wrap:break-word">
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="info-request">
+                <h3>情報提供のお願い</h3>
+                <p class="content-text" style="margin-bottom: 0;">
+                    警視庁は事件解決につながる情報に対し、懸賞金（上限2000万円）を設けています。<br>
+                    些細な情報でも、成城警察署捜査本部への連絡が求められています。
                 </p>
             </div>
         </div>
