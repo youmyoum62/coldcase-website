@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLD CASE ARCHIVE | 未解決事件の真実を追う</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Magazine Style Overrides */
+        body {
+            display: block;
+            /* Override flex center from style.css if present for body */
+            min-height: 100vh;
+        }
+
+        .magazine-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        .site-header {
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-brand {
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--accent-green);
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        /* Hero */
+        .magazine-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+            min-height: 60vh;
+        }
+
+        .hero-text h1 {
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-visual {
+            position: relative;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(100, 255, 218, 0.1), transparent 70%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Notice Bar */
+        .notice-bar {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid #ef4444;
+            padding: 1rem 2rem;
+            margin-bottom: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .notice-text {
+            color: #ef4444;
+            font-weight: 600;
+        }
+
+        .notice-link {
+            color: var(--text-main);
+            text-decoration: underline;
+            font-size: 0.9rem;
+            margin-left: 1rem;
+        }
+
+        /* Featured Section */
+        .section-label {
+            font-family: var(--font-mono);
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            display: block;
+            letter-spacing: 1px;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-bottom: 6rem;
+        }
+
+        .main-feature {
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .main-feature:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-green);
+        }
+
+        .feature-content {
+            padding: 3rem;
+        }
+
+        .feature-tag {
+            background: var(--accent-green);
+            color: var(--bg-deep);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        /* Sub Grid */
+        .sub-grid {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .sub-card {
+            background: var(--bg-card);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .sub-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--accent-blue);
+        }
+
+        /* Stats Row */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin-bottom: 6rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-box {
+            background: var(--bg-deep);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .stat-num {
+            font-size: 2.5rem;
+            font-family: var(--font-mono);
+            color: var(--accent-green);
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        /* Footer */
+        .magazine-footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 4rem 0;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .magazine-hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-row {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .notice-bar {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="magazine-container">
+        <!-- Header -->
+        <header class="site-header">
+            <a href="index.html" class="site-brand">COLD CASE ARCHIVE</a>
+            <nav>
+                <a href="investigation materials.html"
+                    style="color: var(--text-main); text-decoration: none; margin-left: 2rem; font-size: 0.9rem;">ARCHIVE</a>
+                <a href="guideline.html"
+                    style="color: var(--text-main); text-decoration: none; margin-left: 2rem; font-size: 0.9rem;">GUIDELINE</a>
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="magazine-hero">
+            <div class="hero-text">
+                <div style="font-family: var(--font-mono); color: var(--accent-green); margin-bottom: 1rem;">UNSOLVED
+                    MYSTERIES</div>
+                <h1>未解決事件の<br>闇を覗く</h1>
+                <p
+                    style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; max-width: 500px;">
+                    時効が成立しても、事件は終わらない。<br>
+                    膨大な捜査資料と証言から、真実の欠片を拾い集める。<br>
+                    私たちは忘れない。彼らが確かに生きていたことを。
+                </p>
+                <a href="investigation materials.html" class="cta-button">
+                    捜査資料にアクセスする <span class="arrow">→</span>
+                </a>
+            </div>
+            <div class="hero-visual">
+                <div style="font-size: 10rem; opacity: 0.2;">👁️</div>
+            </div>
+        </section>
+
+        <!-- Important Notice -->
+        <div class="notice-bar">
+            <div class="notice-text">
+                ⚠️ 【重要】当サイトの考察は、被害者とそのご遺族への敬意を最優先とします。
+            </div>
+            <a href="guideline.html" class="notice-link">
+                記事を読む前に [当サイトの理念と利用上の注意] をご確認ください →
+            </a>
+        </div>
+
+        <!-- Featured Section -->
+        <span class="section-label">FEATURED CASES</span>
+        <div class="featured-grid">
+            <!-- Main Feature -->
+            <a href="case01.html" class="main-feature" style="text-decoration: none; color: inherit;">
+                <div class="feature-content">
+                    <span class="feature-tag">CASE 01</span>
+                    <h2 class="feature-title">井の頭公園バラバラ殺人事件</h2>
+                    <p style="color: #cbd5e1; line-height: 1.8; margin-bottom: 2rem;">
+                        1994年4月、平和な公園で発見された27個の遺体パーツ。<br>
+                        指紋は削り取られ、血液は完全に抜かれていた。<br>
+                        プロの犯行か、それとも狂気の沙汰か。<br>
+                        日本犯罪史上、最も不可解な未解決事件の深層に迫る。
+                    </p>
+                    <span style="color: var(--accent-green); font-family: var(--font-mono); font-size: 0.9rem;">READ
+                        REPORT →</span>
+                </div>
+            </a>
+
+            <!-- Sub Features -->
+            <div class="sub-grid">
+                <a href="case02.html" class="sub-card">
+                    <span
+                        style="color: var(--accent-blue); font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 0.5rem;">CASE
+                        02</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">世田谷一家殺害事件</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">20世紀最後の夜の惨劇。犯人が残した大量の遺留品が語るものとは。</p>
+                </a>
+                <a href="case03.html" class="sub-card">
+                    <span
+                        style="color: var(--accent-blue); font-size: 0.8rem; font-family: var(--font-mono); margin-bottom: 0.5rem;">CASE
+                        03</span>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">グリコ・森永事件</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">「かい人21面相」からの挑戦状。日本中を巻き込んだ劇場型犯罪。</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-row">
+            <div class="stat-box">
+                <div class="stat-num">11</div>
+                <div class="stat-label">ARCHIVED CASES</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">30+</div>
+                <div class="stat-label">YEARS PASSED</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">0</div>
+                <div class="stat-label">SOLVED</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">∞</div>
+                <div class="stat-label">MYSTERIES</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="magazine-footer">
+            <p>&copy; 2024 COLD CASE ARCHIVE. All rights reserved.</p>
+            <p style="margin-top: 1rem;">
+                <a href="guideline.html"
+                    style="color: var(--text-muted); text-decoration: none; margin: 0 1rem;">Guideline</a>
+                <a href="investigation materials.html"
+                    style="color: var(--text-muted); text-decoration: none; margin: 0 1rem;">All Cases</a>
+            </p>
+        </footer>
+    </div>
+    <div class="scan-line"></div>
+</body>
+
+</html>

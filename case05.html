@@ -1,0 +1,391 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>島根女子大生死体遺棄事件 | COLD CASE ARCHIVE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .detail-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-green);
+            text-decoration: none;
+            font-family: var(--font-mono);
+        }
+
+        .case-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--accent-green);
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(100, 255, 218, 0.3);
+            padding-bottom: 0.5rem;
+            margin-top: 4rem;
+        }
+
+        .content-text {
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-left: 2px solid var(--accent-blue);
+            margin-left: 1rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            background: var(--bg-deep);
+            border: 2px solid var(--accent-green);
+            border-radius: 50%;
+        }
+
+        .timeline-time {
+            font-family: var(--font-mono);
+            color: var(--accent-green);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .timeline-desc {
+            color: var(--text-main);
+        }
+
+        .analysis-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .analysis-box h4 {
+            color: var(--accent-blue);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .analysis-box h4::before {
+            content: '🔍';
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .camera-report {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--accent-green);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .camera-report h3 {
+            color: var(--accent-green);
+            font-family: var(--font-mono);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-bottom: 1px dashed var(--accent-green);
+            padding-bottom: 1rem;
+        }
+
+        .report-section {
+            margin-bottom: 2rem;
+        }
+
+        .report-section h4 {
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+        }
+
+        .data-table th {
+            color: var(--accent-blue);
+            width: 30%;
+        }
+
+        .data-table td {
+            color: #cbd5e1;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .resource-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-green);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .resource-title {
+            font-size: 1rem;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .resource-author {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="detail-container">
+        <a href="investigation materials.html" class="back-link">← ARCHIVE TOP</a>
+
+        <h1 class="case-title">島根女子大生死体遺棄事件</h1>
+
+        <div class="content-section">
+            <h2 class="section-title">1. 事件概要</h2>
+            <p class="content-text">日本を震撼させた残忍な遺体損壊・遺棄事件。</p>
+            <table class="data-table">
+                <tr>
+                    <th>発生時期</th>
+                    <td>2009年（平成21年）10月</td>
+                </tr>
+                <tr>
+                    <th>場所</th>
+                    <td>島根県浜田市（行方不明）、広島県北広島町（遺体発見）</td>
+                </tr>
+                <tr>
+                    <th>被害者</th>
+                    <td>島根県立大学の女子学生（当時19歳）</td>
+                </tr>
+                <tr>
+                    <th>犯行手口</th>
+                    <td>殺害後、遺体を切断・損壊し、広範囲に遺棄。</td>
+                </tr>
+                <tr>
+                    <th>捜査状況</th>
+                    <td>2016年12月、被疑者（益田市在住の会社員の男）を特定したが、被疑者死亡のまま書類送検し、捜査終結。</td>
+                </tr>
+                <tr>
+                    <th>最大の特徴</th>
+                    <td>犯行直後に被疑者が事故死していたため、公訴に至らず、動機や詳細な殺害手段が不明のまま。</td>
+                </tr>
+            </table>
+
+            <h2 class="section-title">2. 事件を追う：詳細な時系列</h2>
+            <ul class="timeline-list">
+                <li class="timeline-item">
+                    <span class="timeline-time">2009.10.26 (Mon) 【行方不明】</span>
+                    <span class="timeline-desc">
+                        21時過ぎ、島根県浜田市のアルバイト先（飲食店）を退店。その後、自宅（大学の寮）へ向かう途中で消息を絶つ。
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">2009.10.28 【捜索願提出】</span>
+                    <span class="timeline-desc">
+                        被害者の家族が島根県警に捜索願を提出。公開捜査開始。
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">2009.11.06 【遺体の一部発見】</span>
+                    <span class="timeline-desc">
+                        広島県北広島町の山林（臥龍山）で、被害者のものとみられる遺体の一部が発見される。
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">2009.11.07以降 【遺留品・遺体発見】</span>
+                    <span class="timeline-desc">
+                        臥龍山周辺で、切断された別の遺体の一部や被害者の衣服、携帯電話などが広範囲に発見される。
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">2009.11上旬 【重要：被疑者の交通事故死】</span>
+                    <span class="timeline-desc">
+                        犯行に関与したとみられる男が、山口県内の高速道路で交通事故により死亡。（この時点では事件との関連は不明）
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">2009.11.26 【デジタルカメラ発見】</span>
+                    <span class="timeline-desc">
+                        島根県内の遺棄現場とは別の場所で、被害者のデジタルカメラが発見される。
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">2016.12 【被疑者特定・書類送検】</span>
+                    <span class="timeline-desc">
+                        捜査本部が益田市在住の当時33歳の会社員の男を被疑者として特定。男は既に死亡しているため、被疑者死亡のまま殺人、死体遺棄などの容疑で書類送検。
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">2019 【捜査終結】</span>
+                    <span class="timeline-desc">
+                        被疑者死亡により公訴を提起できないまま捜査終結が公表される。
+                    </span>
+                </li>
+            </ul>
+
+            <h2 class="section-title">3. 犯人特定への道のり：浮かび上がった男の正体</h2>
+            <p class="content-text">事件解決に至らなかったものの、被疑者の特定を可能にしたのは、複数の証拠のパズルが組み合わさったためです。</p>
+            <div class="analysis-box">
+                <h4>1. 決定的証拠：DNAと体液</h4>
+                <p style="font-size: 0.95rem; color: #cbd5e1;">
+                    遺体発見現場から採取された警察官の着衣に付着していた体液（DNA型）と、別の事件（過去の窃盗事件など）で採取・保管されていた死亡した男のDNA型が一致。これが、男が事件に関与していたことを示す最大の根拠となりました。
+                </p>
+            </div>
+            <div class="analysis-box">
+                <h4>2. デジタルカメラ内の「風景」</h4>
+                <p style="font-size: 0.95rem; color: #cbd5e1;">
+                    発見された被害者のデジタルカメラには、被害者本人が映っていないものの、犯人の車内で撮影されたとみられる画像が残されていました。この画像に写っていた車の内装（シートの柄や特定の物品）が、死亡した男が所有していた車と極めて高い確率で一致しました。
+                </p>
+            </div>
+            <div class="analysis-box">
+                <h4>3. 被疑者のプロフィール</h4>
+                <p style="font-size: 0.95rem; color: #cbd5e1;">
+                    <strong>人物像:</strong> 益田市在住の会社員の男（当時33歳）。<br>
+                    <strong>接点:</strong>
+                    捜査では、被害者と被疑者の間に面識はなかった可能性が高いとされています。被害者のバイト先の客だったという情報もありますが、公的な確定には至っていません。<br>
+                    <strong>事件後の行動:</strong> 犯行直後の2009年11月上旬、山口県美祢市の高速道路で車同士の衝突事故を起こし、死亡しています。
+                </p>
+            </div>
+
+            <h2 class="section-title">4. 残された「闇」：今も続く不可解な謎</h2>
+            <p class="content-text">被疑者が特定されたとはいえ、事件の全容が解明されたわけではありません。</p>
+            <div class="analysis-box">
+                <h4>1. 犯行動機と殺害方法</h4>
+                <p style="font-size: 0.95rem; color: #cbd5e1;">
+                    <strong>動機:</strong> 男はなぜ面識のない女子大生を標的にし、殺害し、あそこまで残忍に遺体を損壊・遺棄したのか、動機は完全に不明です。<br>
+                    <strong>殺害手段:</strong> 遺体が損壊されていたため、具体的な殺害手段（絞殺か薬物かなど）も特定されていません。
+                </p>
+            </div>
+            <div class="analysis-box">
+                <h4>2. 遺体損壊の異常性と「専門性」</h4>
+                <p style="font-size: 0.95rem; color: #cbd5e1;">
+                    遺体切断の手口が非常に異常かつ広範囲にわたっており、<strong>「専門的な知識を持つ者」</strong>による犯行ではないかという見方が当時は強くありました。男にそのような背景があったのか、もしくは別の共犯者がいたのかが謎とされています。
+                </p>
+            </div>
+            <div class="analysis-box">
+                <h4>3. 画像に隠された真実</h4>
+                <p style="font-size: 0.95rem; color: #cbd5e1;">
+                    デジタルカメラに残されていた画像は、男が殺害行為や遺体の一部を撮影したものとみられています。これは犯人の異常な自己顕示欲や記録欲を示していますが、撮影場所が事件の核心を突く証拠である可能性も指摘されています。
+                </p>
+            </div>
+
+            <div class="camera-report">
+                <h3>REPORT: デジタルカメラの「記憶」</h3>
+                <p class="content-text" style="text-align: center; margin-bottom: 2rem;">
+                    被害者のカメラは、「最後のメッセージ」ではなく、<br>
+                    <strong>「犯人の残した記録」</strong>として機能した。
+                </p>
+
+                <div class="report-section">
+                    <h4>📸 1. 犯人特定の決定打となった「車内の写真」</h4>
+                    <p style="font-size: 0.9rem; color: #cbd5e1;">
+                        被害者のカメラであるにもかかわらず、そこに保存されていたのは、犯人の自家用車内で撮影されたとみられる画像でした。<br>
+                        <strong>車の内装:</strong> 車のシートの柄、内装の細部、ダッシュボード上に置かれていた特定の物品などが鮮明に写っていました。<br>
+                        <strong>捜査への貢献:</strong>
+                        捜査本部は、この車の内装写真を公開することなく徹底的に調査。その結果、この特異な内装を持つ車が、のちに被疑者として特定された男の所有物であったことを突き止めました。<br>
+                        <strong>意義:</strong> 被害者が何らかの状況で犯人の車に乗せられたこと、そして犯人がカメラを所持した状態で車内を撮影した（または撮影された）ことが証明されました。
+                    </p>
+                </div>
+
+                <div class="report-section">
+                    <h4>💀 2. 犯行の異常性を示す「記録写真」</h4>
+                    <p style="font-size: 0.9rem; color: #cbd5e1;">
+                        報道では、カメラ内に<strong>「遺体の一部や遺棄現場周辺の状況を写したとみられる画像」</strong>が残されていたことが示唆されています。<br>
+                        <strong>犯人の心理:</strong>
+                        犯行を記録することで、自らの行動を追体験し、警察を出し抜いたという優越感に浸ろうとした可能性や、猟奇的な犯罪者に見られる、犯行を「作品」として残そうとする歪んだ心理の表れである可能性が指摘されています。
+                    </p>
+                </div>
+
+                <div class="report-section">
+                    <h4>📌 考察班の焦点：なぜそのタイミングで？</h4>
+                    <p style="font-size: 0.9rem; color: #cbd5e1;">
+                        「なぜ被害者のカメラで、犯人自身の車内や犯行現場を撮影したのか？」<br><br>
+                        <strong>A説：誤操作</strong><br>
+                        カメラを奪った直後、意図せずシャッターが切られた。<br><br>
+                        <strong>B説：意図的な自供</strong><br>
+                        犯人が自らの異常性を誇示するため、あるいは「誰かに気づいてほしい」という潜在的な願望から故意に残した。<br><br>
+                        動機が不明なままであるからこそ、このデジタルカメラの画像が、男の動機を紐解く唯一の手がかりとして、深く考察され続けているのです。
+                    </p>
+                </div>
+            </div>
+
+            <h2 class="section-title">関連書籍・資料</h2>
+            <div class="resource-grid">
+                <a href="https://www.amazon.co.jp/s?k=彼女のカメラ、彼の異常な愛情+島根女子大生殺害事件" target="_blank" class="resource-card"
+                    style="text-decoration: none; color: inherit;">
+                    <span class="resource-title">彼女のカメラ、彼の異常な愛情 島根女子大生殺害事件</span>
+                    <div class="resource-author">（関連書籍）</div>
+                    <p style="font-size: 0.8rem; color: #8892b0;">Amazonで詳細を見る</p>
+                </a>
+                <a href="https://www.amazon.co.jp/s?k=黒いカラス+島根女子大生殺害事件を追う" target="_blank" class="resource-card"
+                    style="text-decoration: none; color: inherit;">
+                    <span class="resource-title">黒いカラス 島根女子大生殺害事件を追う</span>
+                    <div class="resource-author">（関連書籍）</div>
+                    <p style="font-size: 0.8rem; color: #8892b0;">Amazonで詳細を見る</p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="scan-line"></div>
+</body>
+
+</html>

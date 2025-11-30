@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嵐真由美さん失踪事件 | COLD CASE ARCHIVE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .detail-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--accent-green);
+            text-decoration: none;
+            font-family: var(--font-mono);
+        }
+
+        .case-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            text-align: center;
+        }
+
+        .case-subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-blue);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--accent-green);
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(100, 255, 218, 0.3);
+            padding-bottom: 0.5rem;
+            margin-top: 4rem;
+        }
+
+        .content-text {
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-left: 2px solid var(--accent-blue);
+            margin-left: 1rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            background: var(--bg-deep);
+            border: 2px solid var(--accent-green);
+            border-radius: 50%;
+        }
+
+        .timeline-time {
+            font-family: var(--font-mono);
+            color: var(--accent-green);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .timeline-desc {
+            color: var(--text-main);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+        }
+
+        .data-table th {
+            color: var(--accent-blue);
+            width: 30%;
+        }
+
+        .data-table td {
+            color: #cbd5e1;
+        }
+
+        .mystery-box {
+            background: linear-gradient(135deg, rgba(147, 51, 234, 0.1), rgba(239, 68, 68, 0.1));
+            border: 1px solid rgba(147, 51, 234, 0.3);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .mystery-box h3 {
+            color: var(--accent-blue);
+            font-family: var(--font-mono);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-bottom: 1px dashed var(--accent-blue);
+            padding-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .mystery-memo {
+            background: rgba(0, 0, 0, 0.5);
+            border: 2px solid #ef4444;
+            padding: 2rem;
+            border-radius: 4px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .mystery-memo-text {
+            font-family: var(--font-mono);
+            font-size: 2rem;
+            color: #ef4444;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+        }
+
+        .analysis-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .analysis-box h4 {
+            color: var(--accent-blue);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .analysis-box h4::before {
+            content: '🔍';
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .consideration-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .consideration-list li {
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--accent-blue);
+            border-radius: 4px;
+        }
+
+        .consideration-list li strong {
+            color: var(--accent-green);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .theory-box {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--accent-green);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .theory-box h4 {
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, rgba(100, 255, 218, 0.1), rgba(59, 130, 246, 0.1));
+            border: 1px solid var(--accent-green);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+        }
+
+        .summary-box h3 {
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="detail-container">
+        <a href="investigation materials.html" class="back-link">← ARCHIVE TOP</a>
+
+        <h1 class="case-title">👻 洋子の話は信じるな</h1>
+        <p class="case-subtitle">嵐真由美さん失踪事件と謎のメモの真相</p>
+
+        <div class="content-section">
+            <h2 class="section-title">🚨 事件概要：テレビ放送中に発生した怪異</h2>
+            <table class="data-table">
+                <tr>
+                    <th>失踪日時</th>
+                    <td>1994年(平成6年)9月2日</td>
+                </tr>
+                <tr>
+                    <th>失踪場所</th>
+                    <td>大阪府堺市(当時の自宅付近)</td>
+                </tr>
+                <tr>
+                    <th>失踪者</th>
+                    <td>嵐 真由美さん(当時20歳)</td>
+                </tr>
+                <tr>
+                    <th>特徴</th>
+                    <td>失踪時の状況に不審な点がなく、神隠しのように忽然と姿を消したこと。</td>
+                </tr>
+                <tr>
+                    <th>最大のミステリー</th>
+                    <td>失踪から数年後のテレビ番組で、関係者へのインタビュー中に<strong>「洋子の話は信じるな」</strong>という謎のメモが偶然映り込んだこと。</td>
+                </tr>
+                <tr>
+                    <th>捜査状況</th>
+                    <td>未解決のまま、現在も捜査が継続中。</td>
+                </tr>
+            </table>
+
+            <h2 class="section-title">🕒 事件を追う：嵐真由美さん失踪までの経緯</h2>
+            <p class="content-text">事件の発生当時、失踪の状況は極めてシンプルで、犯罪の可能性を示す明確な証拠はありませんでした。</p>
+            <ul class="timeline-list">
+                <li class="timeline-item">
+                    <span class="timeline-time">1994.09.02 (金) 【失踪当日】</span>
+                    <span class="timeline-desc">
+                        嵐真由美さんは、夕方、自宅(堺市)の近隣のバス停で友人と別れたのを最後に消息を絶つ。<br>
+                        夜、帰宅予定時刻になっても戻らず、家族が連絡を取ろうとするが繋がらない。
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">1994.09.03以降 【捜索開始】</span>
+                    <span class="timeline-desc">
+                        警察に捜索願が提出され、捜索が開始されるが、有力な手がかりは見つからなかった。
+                    </span>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-time">数年後 【重要】テレビ番組での異変</span>
+                    <span class="timeline-desc">
+                        公開捜索番組(『特命リサーチ200X』などと後に誤認される番組)で、被害者の関係者(親族または友人)へのインタビューが放送される。
+                    </span>
+                </li>
+            </ul>
+
+            <h2 class="section-title">🔍 当時の状況の考察ポイント</h2>
+            <ul class="consideration-list">
+                <li>
+                    <strong>自発的失踪の可能性</strong>
+                    当時20歳という年齢から、自ら家出をした可能性も考慮されましたが、特に深刻な悩みやトラブルを抱えていた形跡は確認されていません。
+                </li>
+                <li>
+                    <strong>事件性の乏しさ</strong>
+                    現場周辺に争った形跡や遺留品がなく、事件として立件することが難しい状況でした。
+                </li>
+            </ul>
+
+            <div class="mystery-box">
+                <h3>👻 最大の謎：テレビ画面に映った「呪いのメモ」</h3>
+
+                <p class="content-text">この事件が単なる失踪事件で終わらず、ネット上の伝説となったのは、失踪から数年後に放送された公開捜索番組で起きた異変のためです。</p>
+
+                <div class="analysis-box">
+                    <h4>1. 異変の状況</h4>
+                    <p style="font-size: 0.95rem; color: #cbd5e1;">
+                        番組内で、行方不明となった真由美さんの友人か親族である女性が、事件についてインタビューを受けているシーンがありました。この女性の背後の壁に、何者かが鉛筆やペンで書き残したとみられる<strong>メモ(落書き)</strong>が偶然にもテレビカメラに映り込んでいました。
+                    </p>
+                </div>
+
+                <div class="mystery-memo">
+                    <p class="mystery-memo-text">「洋子の話は信じるな」</p>
+                </div>
+
+                <div class="analysis-box">
+                    <h4>3. メモの衝撃とネットでの拡散</h4>
+                    <p style="font-size: 0.95rem; color: #cbd5e1;">
+                        この一文がネット上で発見され、瞬く間に拡散されました。
+                    </p>
+                    <ul style="margin-top: 1rem; padding-left: 1.5rem; color: #cbd5e1;">
+                        <li style="margin-bottom: 0.5rem;"><strong>「洋子」は誰か？</strong>
+                            メモに登場する<strong>「洋子」</strong>とは、インタビューを受けていた女性本人なのか、それとも真由美さんの別の友人なのか？</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>メッセージの真意</strong>
+                            このメモは、真由美さん本人や、真由美さんの行方を知る誰かが、命がけで残したメッセージではないか？</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>オカルト説の浮上</strong>
+                            真由美さんは、この「洋子」に騙されて拉致された、あるいは宗教やカルト団体に連れ去られたなど、都市伝説的な考察が爆発的に広がるきっかけとなりました。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="section-title">💬 考察と捜査の進展</h2>
+            <p class="content-text">「洋子の話は信じるな」メモの真偽と、それが捜査に与えた影響については、様々な説があります。</p>
+
+            <div class="theory-box">
+                <h4>1. メモの信憑性についての考察</h4>
+                <ul style="margin-top: 1rem; padding-left: 1.5rem; color: #cbd5e1;">
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: var(--accent-green);">単なる落書き説</strong><br>
+                        インタビュー場所の壁に元々あった、事件とは無関係な若者の落書きに過ぎない。
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: var(--accent-green);">真のメッセージ説</strong><br>
+                        事件関係者が、テレビの取材班が来ることを知っていて、こっそりと真実を伝えるために残した。
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong style="color: var(--accent-green);">番組演出説</strong><br>
+                        視聴者の興味を引くため、番組側が意図的に仕込んだもの(ただし、番組側はこの疑惑を否定しています)。
+                    </li>
+                </ul>
+            </div>
+
+            <div class="analysis-box">
+                <h4>2. 捜査への影響</h4>
+                <p style="font-size: 0.95rem; color: #cbd5e1;">
+                    警察は、このメモが映ったことによって得られた情報を重要視し、<strong>「洋子」</strong>という名前を持つ関係者の洗い出しや、メモが発見された場所の特定などを改めて行いました。<br><br>
+                    しかし、このメモが事件の解決に直結する決定的な証拠となることはありませんでした。
+                </p>
+            </div>
+
+            <div class="summary-box">
+                <h3>🖋️ まとめ：闇を呼ぶ失踪事件</h3>
+                <p class="content-text">
+                    嵐真由美さん失踪事件は、<strong>「失踪の事実」と「テレビで発見されたメモの怪異」</strong>という二つの要素が絡み合い、特異な事件として記憶されています。<br><br>
+                    失踪の背後に犯罪があったのか、あるいは自発的な行動だったのか、そして「洋子の話は信じるな」が何を意味していたのか、真相は依然として闇の中にあります。
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="scan-line"></div>
+</body>
+
+</html>
